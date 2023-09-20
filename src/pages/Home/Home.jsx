@@ -31,19 +31,6 @@ const Home = () => {
 
   return (
     <main className={styles.home}>
-      <div className={styles.sliderContainer}>
-        <Slider
-          activeIndex={activeIndex}
-          threshHold={100}
-          transition={1}
-          scaleOnDrag={true}
-        >
-          {cars.map(({ url, title }, index) => (
-            <img className={styles.img} src={url} key={index} alt={title} />
-          ))}
-        </Slider>
-      </div>
-
       <div className={styles.imgContainer}>
         <img
           src="https://cdn.pixabay.com/photo/2017/01/28/16/03/range-rover-2015643_1280.jpg"
@@ -56,6 +43,18 @@ const Home = () => {
         >
           <span>Choose your premium class car</span>
         </div>
+      </div>
+      <div className={styles.sliderContainer}>
+        <Slider
+          activeIndex={activeIndex}
+          threshHold={100}
+          transition={1}
+          scaleOnDrag={true}
+        >
+          {cars.map(({ url, title }, index) => (
+            <img className={styles.img} src={url} key={index} alt={title} />
+          ))}
+        </Slider>
       </div>
     </main>
   );

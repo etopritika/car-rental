@@ -1,12 +1,12 @@
 import React from "react";
-import { Hourglass } from "react-loader-spinner";
+import { Blocks } from "react-loader-spinner";
 
 import styles from "./Loader.module.css";
 
 const Loader = () => {
   return (
     <div className={styles.loader}>
-      <Hourglass
+      <Blocks
         visible={true}
         height="80"
         width="80"
