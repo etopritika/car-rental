@@ -9,8 +9,7 @@ const Header = () => {
       <div className={`${styles.headerContent} container`}>
         <div className={styles.logo}>
           <NavLink to="/" className={styles.logoLink}>
-            <span className={styles.logoLeft}>AUTO </span>
-            <span className={styles.logoCenter}>RIA </span>
+            <span className={styles.logoCenter}>AUTO-RIA </span>
           </NavLink>
         </div>
         <nav className={styles.navigation}>
