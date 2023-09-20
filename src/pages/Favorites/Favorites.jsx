@@ -47,12 +47,12 @@ const Favorites = () => {
           {favoritesCars.length === 0 && (
             <>
               <div className={styles.infoTextTop}>
-                You haven't added anything :(
+                Please add your favorite cars
               </div>
               <div className={styles.infoTextBottom}>
-                <span>To add your favorite car, go to </span>
+                <span>Back to </span>
                 <span className={styles.link}>
-                  <NavLink to="/catalog">Catalog Page</NavLink>
+                  <NavLink to="/catalog">Catalog</NavLink>
                 </span>
               </div>
             </>

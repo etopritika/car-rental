@@ -3,7 +3,6 @@ import Slider from "react-touch-drag-slider";
 
 import styles from "./Home.module.css";
 import cars from "./cars";
-import { NavLink } from "react-router-dom";
 
 const Home = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -43,19 +42,6 @@ const Home = () => {
             <img className={styles.img} src={url} key={index} alt={title} />
           ))}
         </Slider>
-        <div
-          className={`${styles.textBlock} ${
-            textBlockVisible ? styles.visible : ""
-          }`}
-        >
-          <div>RENT EXCLUSIVE CAR</div>
-          <div className={styles.secondText}>
-            <span>To get started go to </span>
-            <span className={styles.link}>
-              <NavLink to="/catalog">Catalog Page</NavLink>
-            </span>
-          </div>
-        </div>
       </div>
 
       <div className={styles.imgContainer}>
@@ -63,10 +49,12 @@ const Home = () => {
           src="https://cdn.pixabay.com/photo/2017/01/28/16/03/range-rover-2015643_1280.jpg"
           alt="Car"
         />
-        <div className={styles.textContainer}>
-          <p className={styles.mainText}>WELCOME</p>
-          <p className={styles.text}>RENT THE CAR</p>
-          <p className={styles.text}>OF YOUR DREAMS</p>
+        <div
+          className={`${styles.textBlock} ${
+            textBlockVisible ? styles.visible : ""
+          }`}
+        >
+          <span>Choose your premium class car</span>
         </div>
       </div>
     </main>

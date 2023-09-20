@@ -1,5 +1,5 @@
 .home {
-  background-color: var(--backdrop-bg-color);
+  background-color: var(--fourth-bg-color);
   min-height: calc(100vh - 180px);
 }
 
@@ -25,11 +25,11 @@ img {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   position: absolute;
-  height: 627px;
-  width: 600px;
+  height: 100%;
+  width: 100%;
   background-color: var(--backdrop-bg-color);
-  top: 16px;
-  right: 16px;
+  top: 0;
+  right: 0;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
